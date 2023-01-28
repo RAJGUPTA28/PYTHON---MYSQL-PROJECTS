@@ -22,4 +22,12 @@ CREATE TABLE IF NOT EXISTS student_marks
       
       
       
-      
+      CREATE TABLE IF NOT EXISTS fees
+    (
+        fid int  primary key AUTO_INCREMENT,
+        rollNo int ,
+        sid int NOT NULL,
+        amount int , 
+        pay_date date , 
+        mode_of_payment char(35)
+    )
